@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Find_IceCream_Path</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://kit.fontawesome.com/e5bca4cbe8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-slate-50">
+<div class="main w-[70%] md:min-w-[50%]] min-h-screen bg-slate-50 m-auto">
+  
+ <h1 class="text-5l font-bold mb-2">
+  Find Ice-Cream But Carefull with Fire
+ </h1>
+
+<div class="gameSection">
+  <div class="w-[70%] md:min-w-[50%]] bg-sky-500 text-1xl m-auto">
+
+
+    <div class="box grid gap-0 grid-cols-[1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] bg-sky-50 content-center text-center"></div>
+  </div>
+  
+  
+  <!-- focus on ; in arrow-->
+  <div class="text-1xl bg-sky-100 w-[30%] md:min-w-[25%]] m-auto">
+   <div class="inner m-auto w-[50%] md:min-w-[25%]] flex flex-nowrap flex-col">
+    <button id='up' class="" onclick="moveNavigate('u')"> &uarr;</button>
+ <div class="flex flex-nowrap flex-row justify-between">
+  <button id='left' onclick="moveNavigate('l')">&larr;</button>  
+  <button id='right' onclick="moveNavigate('r')">&rarr;</button>
+ </div>
+    <button id='down' class="" onclick="moveNavigate('d')">&darr;</button>
+   </div>
+
+  </div>
+  
+</div>
+
+
+<h1 id='game' class="text-5l font-bold mt-5"></h1>
+
+
+
+</div>
+
+
+
+
+
+<div class="hidden">
+ 
+ <!-- <div id="child" class="bg-sky-300 p-2"><i class="fa-solid fa-child-bird" style="color: brown"></i></div>  -->
+ 
+ <div id="child" class="bg-sky-300 p-2"><i class="fa-solid fa-child" style="color: #270ced;"></i></i></div> 
+
+
+
+
+ <div class="fire bg-sky-300 p-2" > <i class="fa-solid fa-fire" style="color: orangered;"></i></div>    
+ 
+ <div id="ice" class="bg-sky-300 p-2" ><i class="fa-solid fa-ice-cream" style="color:fuchsia;"></i></div>
+
+ <div class="cross bg-sky-300 p-2" > <i class="fa-regular fa-circle-xmark" style="color: #ea0606;"></i></div>
+ 
+ <div class="block bg-sky-300 p-2">|</i></div> 
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
